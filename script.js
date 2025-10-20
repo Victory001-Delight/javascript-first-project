@@ -36,11 +36,11 @@ const checkTemperature = () => {
     if (tempValue == '') {
         alert('Please fill in all fields')
     } else if (tempValue <= 19) {
-        showTemp.innerHTML = "Cold"
+        showTemp.innerHTML = "It's a cold day today, Stay Warm"
     } else if (tempValue >= 20 && tempValue <= 28) {
-        showTemp.innerHTML = "Warm"
+        showTemp.innerHTML = "It's a warm today"
     } else if (tempValue >= 28) {
-        showTemp.innerHTML = "Hot"
+        showTemp.innerHTML = "It's a hot day today, Stay Warm"
     }
 }
 

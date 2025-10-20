@@ -8,150 +8,151 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body class="d-flex flex-column align-items-center justify-content-center p-5 gap-5">
+<body class="d-flex flex-column align-items-center justify-content-center p-5 gap-5 bg-primary">
+    <h1 class="text-white">JAVASCRIPT ASSIGNMENT</h1>
     <!--Lowercase Conversion  -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">Delight Delivers</h3>
-        <h2 class="text-center">GET YOUR PACKAGES DELIVERED <br> WITHOUT STRESS</h2>
+        <h3 class="text-center text-white">DELIGHT DELIVERS</h3>
+        <h2 class="text-center text-white">GET YOUR PACKAGES DELIVERED <br> WITHOUT STRESS</h2>
         <div>
-            <label for="Name">Name</label> <br>
-            <input type="text" id="userName" class="w-100"> <br>
-            <label for="Phone Number">Phone Number:</label> <br>
+            <label for="Name" class="text-white">Name</label> <br>
+            <input type="text" id="userName" class="w-100 border-0"> <br>
+            <label for="Phone Number" class="text-white border-0">Phone Number:</label> <br>
             <input type="number" id="number" class="w-100"> <br>
-            <label for="packageInput">Package Name:</label> <br>
+            <label for="packageInput" class="text-white border-0">Package Name:</label> <br>
             <input type="text" id="package" class="w-100"> <br>
-            <label for="address">Address:</label> <br>
+            <label for="address" class="text-white border-0">Address:</label> <br>
             <input type="text" id="address" class="w-100">
         </div>
-        <button onclick="submit()" class="mt-3 btn rounded-pill border-2 border-primary">SUBMIT</button>
+        <button onclick="submit()" class="mt-3 btn rounded-pill border-2 border-white text-white">SUBMIT</button>
     </div>
     <!-- Student Essay -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">ESSAY SUBMISSION</h3>
-        <label for="Name">Student's Name:</label>
+        <h3 class="text-center text-white">ESSAY SUBMISSION</h3>
+        <label for="Name" class="text-white">Student's Name:</label>
         <input type="text" id="studentName" class="w-100"> <br>
-        <label for="matricNo">Matric Number:</label> <br>
+        <label for="matricNo" class="text-white">Matric Number:</label> <br>
         <input type="text" id="matricNumber" class="w-100"> <br>
-        <label for="essay">Your Essay</label> <br>
+        <label for="essay" class="text-white">Your Essay</label> <br>
         <textarea name="" id="essay" rows="5" class="w-100"></textarea> <br>
-        <button onclick="submitEssay()" class="mt-3 btn rounded-pill border-2 border-primary">SUBMIT</button>
+        <button onclick="submitEssay()" class="mt-3 btn rounded-pill border-2 border-white text-white">SUBMIT</button>
     </div>
 
     <!-- Discount Check -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">DELIGHT GROCERY STORE</h3>
-        <h4 class="text-center">Discount Check</h4>
-        <label for="customerName">Your Name</label>
+        <h3 class="text-center text-white">DELIGHT GROCERY STORE</h3>
+        <h4 class="text-center text-white">Discount Check</h4>
+        <label for="customerName" class="text-white">Your Name</label>
         <input type="text" id="customerName" class="w-100">
-        <label for="goods">Number of items bought</label>
+        <label for="goods" class="text-white">Number of items bought</label>
         <input type="number" id="items" class="w-100" placeholder="Number of items bought">
-        <button onclick="checkDiscount()" class="mt-3 btn rounded-pill border-2 border-primary">Check</button>
+        <button onclick="checkDiscount()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check</button>
         <div id="showDiscount" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
     </div>
 
     <!-- Weather Check -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">LAUTECH Weather Station</h3>
-        <h4 class="text-center">Temperature Check</h4>
-        <label for="">Enter today's temperature</label>
+        <h3 class="text-center text-white">LAUTECH Weather Station</h3>
+        <h4 class="text-center text-white">Temperature Check</h4>
+        <label for="" class="text-white">Enter today's temperature</label>
         <input type="number" id="temperature" class="w-100" placeholder="temperature in degrees">
-        <button onclick="checkTemperature()" class="mt-3 btn rounded-pill border-2 border-primary">Check
+        <button onclick="checkTemperature()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check
             Temperature</button>
         <div id="showTemp" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
     </div>
 
     <!-- BMI Check -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">KNOW YOUR BODY MASS INDEX</h3>
-        <label for="">Your Height</label>
+        <h3 class="text-center text-white">KNOW YOUR BODY MASS INDEX</h3>
+        <label for="" class="text-white">Your Height</label>
         <input type="number" placeholder="Height (in metres)" id="height" class="w-100"> <br>
-        <label for="">Your Weight</label>
+        <label for="" class="text-white">Your Weight</label>
         <input type="number" placeholder="Weight (in Kilograms)" id="weight" class="w-100"> <br>
-        <button onclick="checkBMI()" class="mt-3 btn rounded-pill border-2 border-primary">Check</button>
+        <button onclick="checkBMI()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check</button>
         <div id="showStatus" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
     </div>
 
     <!-- Gaming Company -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">ABUJA GAMING COMPANY</h3>
-        <h4 class="text-center">Gamer ID Validation</h4>
-        <label for="">Your Username</label>
+        <h3 class="text-center text-white">ABUJA GAMING COMPANY</h3>
+        <h4 class="text-center text-white">Gamer ID Validation</h4>
+        <label for="" class="text-white">Your Username</label>
         <input type="text" class="w-100" id="gamerName" placeholder="Enter your Username">
         <div id="validateName"></div>
-        <button onclick="checkName()" class="mt-3 btn rounded-pill border-2 border-primary">Enter</button>
+        <button onclick="checkName()" class="mt-3 btn rounded-pill border-2 border-white text-white">Enter</button>
     </div>
 
     <!-- Kano Airline -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">KANO AIRLINE</h3>
-        <h4 class="text-center">Weight Check</h4>
-        <label for="">Luggage Weight</label>
+        <h3 class="text-center text-white">KANO AIRLINE</h3>
+        <h4 class="text-center text-white">Weight Check</h4>
+        <label for="" class="text-white">Luggage Weight</label>
         <input type="number" class="w-100" id="luggageWeight" placeholder="Enter your Luggage weight">
-        <button onclick="checkWeight()" class="mt-3 btn rounded-pill border-2 border-primary">Check</button>
+        <button onclick="checkWeight()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check</button>
         <div id="showWeight" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
     </div>
 
     <!-- OAU Email Check -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">OBAFEMI AWOLOWO UNIVERSITY (OAU)</h3>
-        <h4 class="text-center">Email Verification</h4>
-        <label for="">Student's Name</label>
+        <h3 class="text-center text-white">OBAFEMI AWOLOWO UNIVERSITY (OAU)</h3>
+        <h4 class="text-center text-white">Email Verification</h4>
+        <label for="" class="text-white">Student's Name</label>
         <input type="text" class="w-100" id="studentNames" placeholder="Enter your Full Name">
-        <label for="">Matric Number</label>
+        <label for="" class="text-white">Matric Number</label>
         <input type="number" id="studentMatricNumber" class="w-100" placeholder="Enter your Matric Number">
-        <label for="">Email</label> <br>
+        <label for="" class="text-white">Email</label> <br>
         <input type="text" id="studentEmail" placeholder="Enter your OAU Email" class="w-100">
         <div id="validateEmail" class="text-danger"></div>
-        <button onclick="checkEmail()" class="mt-3 btn rounded-pill border-2 border-primary">Submit</button>
+        <button onclick="checkEmail()" class="mt-3 btn rounded-pill border-2 border-white text-white">Submit</button>
     </div>
 
     <!-- Enugu school -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">ENUGU SECONDARY SCHOOL</h3>
-        <h4 class="text-center">Grading System</h4>
-        <label for="">Student Name</label>
+        <h3 class="text-center text-white">ENUGU SECONDARY SCHOOL</h3>
+        <h4 class="text-center text-white">Grading System</h4>
+        <label for="" class="text-white">Student Name</label>
         <input type="text" placeholder="Enter the student Name" class="w-100" id="enuguName">
-        <label for="">Student Score</label>
+        <label for="" class="text-white">Student Score</label>
         <input type="number" placeholder="Enter the student score" class="w-100" id="studentScore">
-        <button onclick="checkScore()" class="mt-3 btn rounded-pill border-2 border-primary">Check</button>
+        <button onclick="checkScore()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check</button>
         <div id="scoreCheck" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
     </div>
 
     <!-- Portharcourt Supermarket -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">PORTHARCOURT SUPERMARKET</h3>
-        <h4 class="text-center">Discount Check</h4>
-        <label for="">Enter Price</label>
+        <h3 class="text-center text-white">PORTHARCOURT SUPERMARKET</h3>
+        <h4 class="text-center text-white">Discount Check</h4>
+        <label for=""  class="text-white">Enter Price</label>
         <input type="number" placeholder="Enter amount of goods bought" class="w-100" id="price">
-        <button onclick="discountCheck()" class="mt-3 btn rounded-pill border-2 border-primary">Check Discount</button>
+        <button onclick="discountCheck()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check Discount</button>
         <div id="discountPriceCheck" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
     </div>
 
     <!-- JAMB Score Check -->
     <div class="w-50 border border-2 rounded-4 p-4">
-        <h4 class="text-center">KANTAGUA UNIVERSITY</h4>
-        <h4 class="text-center">Eligibility Checker</h4>
-        <label for="">Select your Score</label> <br>
+        <h4 class="text-center text-white">KANTAGUA UNIVERSITY</h4>
+        <h4 class="text-center text-white">Eligibility Checker</h4>
+        <label for=""  class="text-white">Select your Score</label> <br>
         <select name="" id="course" class="w-100">
             <option value="Medicine">Medicine</option>
             <option value="Engineering">Engineering</option>
             <option value="Science">Science</option>
             <option value="Arts">Arts</option>
         </select> <br>
-        <label for="">JAMB Score</label>
+        <label for=""  class="text-white">JAMB Score</label>
         <input type="number" id="jambScore" placeholder="Enter your JAMB Score" class="w-100">
-        <button onclick="checkEligibility()" class="mt-3 btn rounded-pill border-2 border-primary">Check
+        <button onclick="checkEligibility()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check
             Eligibility</button>
         <div id="eligibilityCheck" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
     </div>
 
     <!-- Voting Agge check -->
      <div class="w-50 border border-2 rounded-4 p-4">
-        <h3 class="text-center">VOTING REGISTRATION SYSTEM</h3>
-        <h4 class="text-center">Know If You Are Eligible to Vote</h4>
-        <label for="">Your Birth Year</label>
+        <h3 class="text-center text-white">VOTING REGISTRATION SYSTEM</h3>
+        <h4 class="text-center text-white">Know If You Are Eligible to Vote</h4>
+        <label for="" class="text-white">Your Birth Year</label>
         <input type="text" placeholder="Enter your birth year" class="w-100" id="birthYear">
-        <button  onclick="checkStatus()" class="mt-3 btn rounded-pill border-2 border-primary">Check</button>
+        <button  onclick="checkStatus()" class="mt-3 btn rounded-pill border-2 border-white text-white">Check</button>
          <div id="checkVoteStatus" class="w-100 border border-2 bg-white mt-2" style="height: 7vh;"></div>
      </div>
 </body>
